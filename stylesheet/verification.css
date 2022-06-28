@@ -1,0 +1,152 @@
+
+:root{
+    --success-color:#2ecc71;
+    --error-color:red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.hero{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.409);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+   height: 100vh;
+   background-image: url(./../Image/bg\ img.jpg);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(30px);
+}
+.opacity{
+      
+}
+.container{
+    position: relative;
+    width: 500px;
+    background-color:white ;
+    padding: 30px 40px;
+   border-radius: 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    border: 1px solid whitesmoke;
+    margin-top: 50px;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    /* color: #382AA5; */
+    /* color: rgb(108, 108, 108); */
+    color: rgb(5, 182, 5) !important;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: block;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.form-control input{
+    border: 2px solid gainsboro;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: gray;
+
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    border-color:var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+  bottom: 0;
+   left: 0;
+    visibility: hidden;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.form-control.form-control.error small{
+    visibility: visible;
+}
+
+.form button{
+    cursor: pointer;
+    /* background-color: #382AA5; */
+    background-color:rgb(108, 108, 108);;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.3s;
+    border: none;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    border-radius: 50px;
+    background-color: rgb(5, 182, 5) !important;
+}
+
+
+.form button:hover{
+    background-color: darkgreen !important;
+}
+
+.container p{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 13px;
+    word-spacing: 2px;
+}
+
+.container p a{
+    color: rgb(5, 182, 5) !important;
+    text-decoration: none;
+}
+
+.container p a:hover{
+    text-decoration: underline;
+  
+}
+
+@media(max-width:430px){
+    .container{
+        width: 95%;
+        height: max-content;
+        padding: 30px 20px;
+    }
+}
