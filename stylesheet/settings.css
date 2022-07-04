@@ -1,0 +1,144 @@
+
+.settings-options
+{
+    display: flex;
+    align-items: center;
+}
+
+.settings-options button
+{
+    margin-right: 20px;
+    position: relative;
+    padding: 10px 30px;
+    font-size: 17px;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 40px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.settings-options  .active
+{
+    background-color: whitesmoke !important;
+    overflow: hidden;
+    box-shadow: -2px -2px 4px white, 2px 2px 5px rgba(0, 0, 0, 0.144);
+}
+
+.settings-options button:hover
+{
+    background-color: rgb(227, 227, 227);
+}
+
+.settings-options .active:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    background-color: rgb(225, 153, 65) !important;
+    overflow: hidden;
+}
+
+.settings-box
+{
+    margin-top: 50px;
+}
+
+.settings-box .settings-acct
+{
+    width: 50%;
+    min-height: 90vh;
+    background-color: whitesmoke;
+    box-shadow:-10px -10px 15px rgb(250, 250, 250),3px 3px 5px rgba(36, 36, 36, 0.22);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.settings-box .settings-acct h2
+{
+    margin-bottom: 30px;
+}
+
+.settings-box .settings-acct .img-circle
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow:-10px -10px 15px rgb(250, 250, 250),3px 3px 5px rgba(36, 36, 36, 0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-box .settings-acct .img-circle img
+{
+    width: 80%;
+    height: 80%;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: inset -2px -2px 4px white, inset 2px 2px 5px rgba(0, 0, 0, 0.144);
+} 
+
+
+
+::-webkit-file-upload-button
+{  
+    cursor: pointer;
+    margin: 20px 0px;
+    position: relative;
+    padding: 10px 30px;
+    font-size: 17px;
+    border-radius:  50px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow:-3px -3px 15px rgb(250, 250, 250),3px 3px 5px rgba(36, 36, 36, 0.22);
+}
+
+.settings-box .settings-acct form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.settings-acct form label
+{
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.settings-box .settings-acct form input
+{
+    width: 80%;
+    height: 55px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: inset -2px -2px 4px white, inset 2px 2px 5px rgba(0, 0, 0, 0.144);
+    margin: 20px 0px;   
+}
+
+.settings-box .settings-acct form button
+{
+    width: max-content;
+    width: 80%;
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: rgb(225, 153, 65);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow:-3px -3px 15px rgb(250, 250, 250),3px 3px 5px rgba(36, 36, 36, 0.22);
+}

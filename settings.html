@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href=""><i class="bx bx-grid-alt"></i><span>Dashboard</span></a></li>
+            <li><a href=""><i class="bx bx-bell"></i><span>Notifications</span></a></li>
+            <li  class="active"><a href=""><i class="bx bx-cog"></i><span>Settings</span></a></li>
+            <li><a href=""><i class="bx bx-door-open"></i><span>Logout</span></a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="navbar-section">
+            <div class="nav-left-section">
+                <i class="bx bx-menu nav-resize-controller"></i>
+               <h1>Settings</h1>
+            </div>
+
+            <input type="text" placeholder="Search"> 
+            <a href=""><i class="bx bx-cog"></i></a>
+        </div>
+        <div class="content">
+            <div class="left-section">
+                <div class="settings-options">
+                    <button class="active">Account</button>
+                    <button>Security</button>
+                    <button>Add administrator</button>
+                </div>
+
+                <div class="settings-box">
+                    <div class="settings-acct">
+                        <h2>Account details</h2>
+                        <div class="img-circle">
+                            <img src="140673-abstract-dark-green-wavy-background-vector-graphic.jpg" alt="" aria-colindex="">
+                        </div>
+                        <input type="file" id="upload-photo"> 
+
+                        <form action="">
+                            <label for="">Username</label>
+                            <input type="text" required placeholder="John Doe">
+                            <label for="">Email</label>
+                            <input type="email" required placeholder="johndoe@gmail.com">
+                           <button>Update</button>
+                        </form>
+
+                    </div>
+
+                    <form action="" class="add-admin">
+                        <h2>Add administrator</h2>
+                        <label for="">Username</label>
+                        <input type="text">
+                        <label for="">Email</label>
+                        <input type="text">
+                        <label for=""></label>
+                        <select name="" id="">
+                            <option value="">Super administrator</option>
+                            <option value="">Administrator</option>
+                        </select>
+                        <label for="">Password</label>
+                        <input type="text">
+                        <button>Create</button>
+
+                    </form>
+                </div>
+            </div>
+
+
+          
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>       
