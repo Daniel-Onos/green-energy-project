@@ -3,8 +3,8 @@ document.querySelector("#form").addEventListener("submit", (e) => {
   
     const formData = new FormData(e.target);
   
-    const email = formData.get("eml");
-    const password = formData.get("psw");
+    const email = formData.get("email");
+    const password = formData.get("password");
   
     let user = getSingleUser(email)
   

@@ -41,7 +41,7 @@ document.querySelector("#form").addEventListener("submit", (e) => {
    setTimeout(() => {
      window.history.replaceState(null, null, window.location.pathname);
      
-     window.location.replace("signup.html");
+     window.location.replace("login.html");
    }, 900);
 
  }else{
